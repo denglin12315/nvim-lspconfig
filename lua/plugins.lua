@@ -40,14 +40,16 @@ require("lazy").setup({
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
-			"onsails/lspkind.nvim",
-			"hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
-			"hrsh7th/cmp-buffer", -- buffer auto-completion
-			"hrsh7th/cmp-path", -- path auto-completion
-			"hrsh7th/cmp-cmdline", -- cmdline auto-completion
+            "onsails/lspkind.nvim",
+            "hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
+            "hrsh7th/cmp-buffer", -- buffer auto-completion
+            "hrsh7th/cmp-path", -- path auto-completion
+            "hrsh7th/cmp-cmdline", -- cmdline auto-completion
+            "L3MON4D3/LuaSnip",
+            "saadparwaiz1/cmp_luasnip",
 		},
 		config = function()
-			require("config.nvim-cmp")
+            require("config.nvim-cmp")
 		end,
 	},
 	-- Colorscheme
