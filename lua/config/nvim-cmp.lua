@@ -40,8 +40,6 @@ cmp.setup({
 				-- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
 				-- they way you will only jump inside the snippet region
 				luasnip.expand_or_jump()
-			elseif has_words_before() then
-				cmp.complete()
 			else
 				fallback()
 			end
